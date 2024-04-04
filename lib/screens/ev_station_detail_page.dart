@@ -96,7 +96,7 @@ class EVStationDetailPage extends StatelessWidget {
 
   // Function to fetch a single photo
   Future<Uint8List> _fetchPhoto(String photoReference) async {
-    final apiKey = 'AIzaSyBaULQ2frkIPpr9Uw62dqBTreT3tT9GHJc';
+    final apiKey = 'YOUR_API_KEY';
     final url =
         'https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=$photoReference&key=$apiKey';
     final response = await http.get(Uri.parse(url));
